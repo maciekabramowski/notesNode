@@ -10,11 +10,11 @@ var user = os.userInfo();
 // fs.appendFile('greetings.txt', 'Hello world!');
 
 //Option one
-fs.appendFile('greetings.txt', 'Hello ' + user.username + '!', function (err){
+fs.appendFile('greetings.txt', 'Hello '+user.username+'!', function (err){
   if (err){
     console.log('Unable to write to file');
   }
 });
 
 //Option two
-// fs.appendFileSync('greetings.txt','Hello world');
+// fs.appendFileSync('greetings.txt','Hello world!');
